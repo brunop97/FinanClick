@@ -1,7 +1,6 @@
 package com.example.financlick;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class SingIn extends AppCompatActivity {
