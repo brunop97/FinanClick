@@ -14,7 +14,7 @@ public class SingUp extends AppCompatActivity {
         setContentView(R.layout.activity_sing_up);
     }
 
-    public  void textLogin (View v) {
+    public void textLogin (View v) {
         Intent telaSingIn = new Intent(this, SingIn.class);
         startActivity(telaSingIn);
     }
