@@ -18,4 +18,9 @@ public class SingIn extends AppCompatActivity {
         Intent telaSingUp = new Intent(this, SingUp.class);
         startActivity(telaSingUp);
     }
+
+    public void mainScreen (View v) {
+        Intent telaMainScreen = new Intent(this, MainScreen.class);
+        startActivity(telaMainScreen);
+    }
 }

@@ -67,6 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/teal_700"
+            android:onClick="mainScreen"
             android:text="Sign Up"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
