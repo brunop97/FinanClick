@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "148021465819",
+    "project_id": "financlick-915d7",
+    "storage_bucket": "financlick-915d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148021465819:android:7ddff374284720db98f2fe",
+        "android_client_info": {
+          "package_name": "com.example.financlick"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148021465819-8vl8o0nl1ang84kj90kqjlr8oki0tivd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.financlick",
+            "certificate_hash": "33698aac1cd3f3f472552b7c4bef23be93178a36"
+          }
+        },
+        {
+          "client_id": "148021465819-6m76br14dv13mmp2888h572lghi84kvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp_TOYfG73Z74u3rgdeBvl_i_VsTfkzTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148021465819-6m76br14dv13mmp2888h572lghi84kvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

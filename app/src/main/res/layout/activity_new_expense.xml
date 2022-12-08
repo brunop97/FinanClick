@@ -91,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/revenueDescription"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="90dp"
@@ -102,7 +102,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/revenueValue"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -110,10 +110,10 @@
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/revenueDescription" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/revenueDate"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
@@ -121,10 +121,10 @@
         android:ems="10"
         android:inputType="date"
         app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/revenueValue" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/revenueCategory"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
@@ -132,7 +132,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/revenueDate" />
 
     <TextView
         android:id="@+id/textView13"
@@ -147,25 +147,25 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/revenueFixed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginTop="28dp"
         app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/revenueCategory" />
 
     <Switch
-        android:id="@+id/switch2"
+        android:id="@+id/revenueRecurrent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="40dp"
         app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintTop_toBottomOf="@+id/revenueFixed" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/revenueAmount"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
@@ -173,10 +173,10 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+        app:layout_constraintTop_toBottomOf="@+id/revenueRecurrent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/createButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/teal_700"
