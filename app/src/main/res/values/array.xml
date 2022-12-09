@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="tiposMovimentacoes">
-        <item >Adiconar Receita</item>
-        <item >Adiconar Despesa</item>
+        <item >Adicionar Receita</item>
+        <item >Adicionar Despesa</item>
     </string-array>
 </resources>
