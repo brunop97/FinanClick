@@ -3,6 +3,7 @@ package com.example.financlick;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Switch;
@@ -49,6 +50,7 @@ public class NewRevenue extends AppCompatActivity {
         db.collection("revenues").add(revenue).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
             @Override
             public void onSuccess(DocumentReference documentReference) {
+                mainScreen();
                 Toast.makeText(getApplicationContext(), "Receita adicionada com sucesso", Toast.LENGTH_LONG).show();
             }
         }).addOnFailureListener(new OnFailureListener() {
@@ -57,5 +59,10 @@ public class NewRevenue extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Erro ao adicionar receita", Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    public void mainScreen () {
+        Intent telaMainScreen = new Intent(this, MainScreen.class);
+        startActivity(telaMainScreen);
     }
 }
