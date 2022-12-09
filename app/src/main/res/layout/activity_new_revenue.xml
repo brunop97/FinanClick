@@ -177,10 +177,11 @@
         app:layout_constraintTop_toBottomOf="@+id/revenueRecurrent" />
 
     <Button
-        android:id="@+id/createButton"
+        android:id="@+id/createRevenueButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/teal_700"
+        android:onClick="add"
         android:text="Criar"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"

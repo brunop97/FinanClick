@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="addExpense"
     tools:context=".NewExpense">
 
     <TextView
@@ -91,7 +92,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <EditText
-        android:id="@+id/revenueDescription"
+        android:id="@+id/expenseDescription"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="90dp"
@@ -102,7 +103,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/revenueValue"
+        android:id="@+id/expenseValue"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -110,10 +111,10 @@
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/revenueDescription" />
+        app:layout_constraintTop_toBottomOf="@+id/expenseDescription" />
 
     <EditText
-        android:id="@+id/revenueDate"
+        android:id="@+id/expenseDate"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
@@ -121,10 +122,10 @@
         android:ems="10"
         android:inputType="date"
         app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/revenueValue" />
+        app:layout_constraintTop_toBottomOf="@+id/expenseValue" />
 
     <EditText
-        android:id="@+id/revenueCategory"
+        android:id="@+id/expenseCategory"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
@@ -132,7 +133,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/revenueDate" />
+        app:layout_constraintTop_toBottomOf="@+id/expenseDate" />
 
     <TextView
         android:id="@+id/textView13"
@@ -147,25 +148,25 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <Switch
-        android:id="@+id/revenueFixed"
+        android:id="@+id/expenseFixed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginTop="28dp"
         app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/revenueCategory" />
+        app:layout_constraintTop_toBottomOf="@+id/expenseCategory" />
 
     <Switch
-        android:id="@+id/revenueRecurrent"
+        android:id="@+id/expenseRecurrent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="40dp"
         app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/revenueFixed" />
+        app:layout_constraintTop_toBottomOf="@+id/expenseFixed" />
 
     <EditText
-        android:id="@+id/revenueAmount"
+        android:id="@+id/expenseAmount"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
@@ -173,13 +174,14 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/revenueRecurrent" />
+        app:layout_constraintTop_toBottomOf="@+id/expenseRecurrent" />
 
     <Button
-        android:id="@+id/createButton"
+        android:id="@+id/createExpenseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/teal_700"
+        android:onClick="addExpense"
         android:text="Criar"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
